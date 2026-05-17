@@ -1,38 +1,26 @@
-# lab12-vue-spa
+# Лабораторная работа №12: Создание SPA на Vue 3 с использованием Vue Router и Pinia
 
-This template should help get you started developing with Vue 3 in Vite.
+## Выполнение работы
+Глазырина Ольга 8И41
 
-## Recommended IDE Setup
+## Описание
+Разработка трёхстраничного SPA-приложения на базе Vue 3 с использованием официальных инструментов: Vue Router и Pinia. Приложение демонстрирует работу с однофайловыми компонентами (SFC), навигацию без перезагрузки страницы, получение данных через GET-запрос к внешнему API и отправку пользовательских данных через POST-запрос в формате JSON.
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## Стек технологий
+- Vue 3 (Composition API, `<script setup>`)
+- Vue Router
+- Pinia (state management)
+- Vite
+- JSONPlaceholder
 
-## Recommended Browser Setup
-
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
+## Структура проекта
+src/
+├── assets/ # Глобальные стили и статические файлы
+├── router/ # Конфигурация маршрутов (index.js)
+├── stores/ # Хранилище состояния Pinia (store.js)
+├── views/ # Страницы приложения
+│ ├── Page1.vue # Страница 1: Статическая информация
+│ ├── Page2.vue # Страница 2: Получение данных с API
+│ └── Page3.vue # Страница 3: Форма отправки данных 
+├── App.vue # Корневой компонент с навигацией
+└── main.js # Точка входа, подключение Pinia и Router
